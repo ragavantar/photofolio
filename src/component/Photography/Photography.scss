@@ -1,0 +1,32 @@
+.category {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  div {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px 30px 10px;
+    cursor: pointer;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  img {
+    max-height: 200px;
+    height: auto;
+  }
+}
+
+.galleryL {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img {
+    max-height: 200px;
+    height: auto;
+  }
+}

@@ -7,7 +7,7 @@ const About = () => {
       <figure>
         <img
           src="https://photos.smugmug.com/Other/Customization-Files/n-2qK2H/i-7GVShbV/0/c7d0994c/X4/i-7GVShbV-X4.jpg"
-          alt="photo"
+          alt="profile"
         />
       </figure>
       <div>

@@ -17,3 +17,14 @@
     width: 50%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .about {
+    height: auto;
+    flex-direction: column;
+    figure,
+    div {
+      width: 100%;
+    }
+  }
+}
