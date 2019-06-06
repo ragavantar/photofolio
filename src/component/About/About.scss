@@ -1,0 +1,19 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  figure {
+    width: 50%;
+    max-height: 100vh;
+    img {
+      width: 100%;
+    }
+  }
+
+  div {
+    width: 50%;
+  }
+}
