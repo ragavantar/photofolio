@@ -51,6 +51,24 @@ class Photography extends Component {
             <img src={img} alt="" key="img" />
           ))}
         </div>
+        <h1>Swipe full horizon</h1>
+        <div className="galleryH">
+          {this.state.images.map(img => (
+            <img src={img} alt="" key="img" />
+          ))}
+          {this.state.images.map(img => (
+            <img src={img} alt="" key="img" />
+          ))}
+          {this.state.images.map(img => (
+            <img src={img} alt="" key="img" />
+          ))}
+          {this.state.images.map(img => (
+            <img src={img} alt="" key="img" />
+          ))}
+          {this.state.images.map(img => (
+            <img src={img} alt="" key="img" />
+          ))}
+        </div>
       </React.Fragment>
     );
   }

@@ -30,3 +30,15 @@
     height: auto;
   }
 }
+
+.galleryH {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 90vh;
+  overflow: scroll;
+  img {
+    max-height: 200px;
+    height: auto;
+  }
+}
