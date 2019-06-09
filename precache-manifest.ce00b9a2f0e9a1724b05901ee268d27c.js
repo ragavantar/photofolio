@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "328907017572467f110ba53d6d5e7a86",
+    "revision": "5b8d58942003c891fb4f59c45701ffee",
     "url": "/photofolio/index.html"
   },
   {
-    "revision": "7d93c849c9926ae87a53",
+    "revision": "71724b43c7c4162f4fc0",
     "url": "/photofolio/static/css/main.abb84151.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photofolio/static/js/2.cf440eb4.chunk.js"
   },
   {
-    "revision": "7d93c849c9926ae87a53",
-    "url": "/photofolio/static/js/main.f8501a86.chunk.js"
+    "revision": "71724b43c7c4162f4fc0",
+    "url": "/photofolio/static/js/main.2bce6fda.chunk.js"
   },
   {
     "revision": "393e487cdedf620c8249",
