@@ -33,19 +33,7 @@ class Photography extends Component {
           <div>Events</div>
           <div>Family&nbsp;Shoot</div>
         </div>
-        <h1>Cat 1</h1>
-        <div className="gallery">
-          {this.state.images.map(img => (
-            <img src={img} alt="" key="img" />
-          ))}
-        </div>
-        <h1>Cat 2</h1>
-        <div className="gallery">
-          {this.state.images.map(img => (
-            <img src={img} alt="" key="img" />
-          ))}
-        </div>
-        <h1> list view</h1>
+        <h1>Cat</h1>
         <div className="galleryL">
           {this.state.images.map(img => (
             <img src={img} alt="" key="img" />
