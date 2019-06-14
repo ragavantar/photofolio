@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.abb84151.chunk.css",
-    "main.js": "/photofolio/static/js/main.2bce6fda.chunk.js",
-    "main.js.map": "/photofolio/static/js/main.2bce6fda.chunk.js.map",
+    "main.css": "/photofolio/static/css/main.e14358c3.chunk.css",
+    "main.js": "/photofolio/static/js/main.929edae9.chunk.js",
+    "main.js.map": "/photofolio/static/js/main.929edae9.chunk.js.map",
     "runtime~main.js": "/photofolio/static/js/runtime~main.c4ce0f86.js",
     "runtime~main.js.map": "/photofolio/static/js/runtime~main.c4ce0f86.js.map",
-    "static/js/2.cf440eb4.chunk.js": "/photofolio/static/js/2.cf440eb4.chunk.js",
-    "static/js/2.cf440eb4.chunk.js.map": "/photofolio/static/js/2.cf440eb4.chunk.js.map",
+    "static/js/2.d81f0181.chunk.js": "/photofolio/static/js/2.d81f0181.chunk.js",
+    "static/js/2.d81f0181.chunk.js.map": "/photofolio/static/js/2.d81f0181.chunk.js.map",
     "index.html": "/photofolio/index.html",
-    "precache-manifest.ce00b9a2f0e9a1724b05901ee268d27c.js": "/photofolio/precache-manifest.ce00b9a2f0e9a1724b05901ee268d27c.js",
+    "precache-manifest.e7da9f1ed5986dc281f376ae29238621.js": "/photofolio/precache-manifest.e7da9f1ed5986dc281f376ae29238621.js",
     "service-worker.js": "/photofolio/service-worker.js",
-    "static/css/main.abb84151.chunk.css.map": "/photofolio/static/css/main.abb84151.chunk.css.map"
+    "static/css/main.e14358c3.chunk.css.map": "/photofolio/static/css/main.e14358c3.chunk.css.map"
   }
 }
