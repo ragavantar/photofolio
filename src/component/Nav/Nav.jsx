@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Nav.scss";
 const Nav = () => {
+  const [status, setStatus] = useState('close');
   return (
-    <nav>
+    <nav className={status}  onClick={()=> status === 'close'? setStatus('open'): setStatus('close')}>
       <h1>title</h1>
       <ul>
         <li><Link to="/photofolio/">About</Link></li>
