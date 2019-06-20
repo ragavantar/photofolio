@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Switch , Route } from 'react-router-dom';
+
 import "./App.css";
 
 import Nav from "./component/Nav/Nav";
@@ -10,8 +12,11 @@ function App() {
     <React.Fragment>
       <Nav />
       <div className="content">
-        <About />
-        <Photography />
+      <Switch>
+        <Route exact path="/" component = {About}/>
+        <Route path="/photography" component = {Photography}/>
+     
+      </Switch>
       </div>
     </React.Fragment>
   );
