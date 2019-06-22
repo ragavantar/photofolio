@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/photofolio/static/css/main.1375e644.chunk.css",
-    "main.js": "/photofolio/static/js/main.093808a7.chunk.js",
-    "main.js.map": "/photofolio/static/js/main.093808a7.chunk.js.map",
+    "main.css": "/photofolio/static/css/main.a6a9fc81.chunk.css",
+    "main.js": "/photofolio/static/js/main.0067d6f8.chunk.js",
+    "main.js.map": "/photofolio/static/js/main.0067d6f8.chunk.js.map",
     "runtime~main.js": "/photofolio/static/js/runtime~main.c4ce0f86.js",
     "runtime~main.js.map": "/photofolio/static/js/runtime~main.c4ce0f86.js.map",
     "static/js/2.d81f0181.chunk.js": "/photofolio/static/js/2.d81f0181.chunk.js",
     "static/js/2.d81f0181.chunk.js.map": "/photofolio/static/js/2.d81f0181.chunk.js.map",
     "index.html": "/photofolio/index.html",
-    "precache-manifest.5e3660ca70d36e273c708199e2e98738.js": "/photofolio/precache-manifest.5e3660ca70d36e273c708199e2e98738.js",
+    "precache-manifest.4895640e2eda9f5d2c24f4f03f80ede2.js": "/photofolio/precache-manifest.4895640e2eda9f5d2c24f4f03f80ede2.js",
     "service-worker.js": "/photofolio/service-worker.js",
-    "static/css/main.1375e644.chunk.css.map": "/photofolio/static/css/main.1375e644.chunk.css.map"
+    "static/css/main.a6a9fc81.chunk.css.map": "/photofolio/static/css/main.a6a9fc81.chunk.css.map"
   }
 }
