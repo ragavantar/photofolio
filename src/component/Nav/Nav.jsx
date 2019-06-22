@@ -6,7 +6,8 @@ const Nav = () => {
   const [status, setStatus] = useState('close');
   return (
     <nav className={status}  onClick={()=> status === 'close'? setStatus('open'): setStatus('close')}>
-      <h1>title</h1>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54-kZKQw7mZcRpGKi0Mlzo66I8lQWDgPSm0D4BVIEA-X5-rpW" alt="logo" />
+      <h1>Jeevan subramani photography</h1>
       <ul>
         <li><Link to="/photofolio/">About</Link></li>
         <li><Link to="/photofolio/photography">Photography</Link></li>

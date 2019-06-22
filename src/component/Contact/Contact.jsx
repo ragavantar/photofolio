@@ -1,15 +1,23 @@
 import React from "react";
+import "./Contact.scss";
 
 const Contact = () => {
     return (
-        <section>
-            <h1>Contact</h1>
-
-            <h2> sub </h2>
-            <p> abhjsh</p>
-            <p> abhjsh</p>
-            <p> abhjsh</p>
-            </section>
+        <section className="Contact">
+            
+            <form>
+            <h1>CONTACT</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." />
+            <label for="ph">Phone Number</label>
+            <input type="text" id="ph" name="ph" placeholder="Your phone number.." />
+            <label for="msg">Message</label>
+    <textarea id="msg" name="msg" placeholder="Your message.."></textarea>
+            <button>Submit</button>
+            </form>
+        </section>
     );
 }
 

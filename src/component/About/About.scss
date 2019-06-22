@@ -15,6 +15,7 @@
 
   div {
     width: 50%;
+    padding-right: 20px;
   }
 }
 
@@ -22,9 +23,12 @@
   .about {
     height: auto;
     flex-direction: column;
-    figure,
-    div {
+    figure{
       width: 100%;
+    }
+    div {
+      width: 80%;
+      padding: 0;
     }
   }
 }

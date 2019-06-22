@@ -9,7 +9,8 @@ class Photography extends Component {
   constructor() {
     super();
     this.state = {
-      images: Data.images
+      images: Data.images,
+      cat: 'Portrait'
     };
   }
   render() {
@@ -18,22 +19,16 @@ class Photography extends Component {
         <br />
         <br />
         <br />
-        <br />
-        <br />
         <div className="category">
-          <div>Portait</div>
+          <div>Portrait</div>
           <div>Fashion</div>
-          <div>Concept&nbsp;Shoots</div>
-          <div>Couple&nbsp;Shoots</div>
-          <div>Life&nbsp;Style</div>
           <div>Wedding&nbsp;Portfolio</div>
-          <div>Maternity&nbsp;Shoot</div>
+          <div>Commercial&nbsp;Projects</div>
+          <div>Life&nbsp;Style</div>
+          <div>Couple&nbsp;Shoots</div>
           <div>Travel&nbsp;and&nbsp;Landscape</div>
-          <div>Corporate&nbsp;Events</div>
-          <div>Events</div>
-          <div>Family&nbsp;Shoot</div>
         </div>
-        <h1>Cat</h1>
+        <h1>{this.state.cat}</h1>
         <div className="galleryL">
           {this.state.images.map(img => (
             <img src={img} alt="" key="img" />
