@@ -6,20 +6,20 @@ class Project extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      data: {}
     };
   }
 
   componentDidMount() {
+    
     fetch("https://vikashvvn2.000webhostapp.com/portfolio/api/getProject.php")
       .then(res => res.json())
       .then(
         (result) => {
-          // this.setState({
-          //   isLoaded: true,
-          //   items: result.items
-          // });
-          console.log(result)
+          this.setState({
+            isLoaded: true,
+            data: result
+          });
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -35,20 +35,19 @@ class Project extends Component {
 
 
   render() {
-    const { error, isLoaded, items } = this.state;
+    const { error, isLoaded, data } = this.state;
+    const { name, desc, imgs } = data;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       return (
-        <ul>
-          {items.map(item => (
-            <li key={item.name}>
-              {item.name} {item.price}
-            </li>
-          ))}
-        </ul>
+        <div>
+          <h2>{name}</h2>
+          <p>{desc}</p>
+          <img src="https://vikashvvn2.000webhostapp.com/portfolio/img/IMG_5d11d2647dd18.png" />
+        </div>
       );
     }
   }

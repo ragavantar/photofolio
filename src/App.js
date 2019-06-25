@@ -9,6 +9,7 @@ import About from "./component/About/About";
 import Photography from "./component/Photography/Photography";
 import Contact from "./component/Contact/Contact";
 import Shop from "./component/Shop/Shop";
+import Project from "./component/Project/Project";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/photofolio/photography" component = {Photography}/>
         <Route path="/photofolio/Contact" component = {Contact}/>
         <Route path = "/photofolio/Shop" component = {Shop} />
-     
+        <Route path = "/photofolio/Project" component = {Project} />
       </Switch>
       </div>
     </React.Fragment>
