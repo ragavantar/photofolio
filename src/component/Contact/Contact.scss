@@ -1,0 +1,25 @@
+.Contact{
+    label, input, textarea{
+        display: block;
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    textarea{
+        height: 100px;
+    }
+
+    button {
+        padding: 10px;
+        margin: 10px;
+        background: white;
+        border: 1px solid black;
+    }
+
+    form{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        padding: 30px;
+        width: 80%;
+    }
+}
