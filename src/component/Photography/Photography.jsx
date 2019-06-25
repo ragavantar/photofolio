@@ -35,6 +35,9 @@ class Photography extends Component {
         },
         (error) => {
           console.log(error);
+          this.setState({
+            images: []
+          });
           // alert('failed to load data');
         }
       )
