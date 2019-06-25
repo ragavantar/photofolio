@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "./Project.scss";
+
 class Project extends Component {
   constructor(props){
     super(props);
@@ -11,8 +13,8 @@ class Project extends Component {
   }
 
   componentDidMount() {
-    
-    fetch("https://vikashvvn2.000webhostapp.com/portfolio/api/getProject.php")
+    const { match: { params } } = this.props;
+    fetch(`https://vikashvvn2.000webhostapp.com/portfolio/api/getProject.php?id=${params.id}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -46,7 +48,23 @@ class Project extends Component {
         <div>
           <h2>{name}</h2>
           <p>{desc}</p>
-          <img src="https://vikashvvn2.000webhostapp.com/portfolio/img/IMG_5d11d2647dd18.png" />
+          <h3>Slides</h3>
+          <div className="gallerySwipe">
+            {
+              imgs.map(
+                img => 
+                <img src={`https://vikashvvn2.000webhostapp.com/portfolio/img/thumbs/${img}`} alt={`${name} image`} key={img}/>)
+            }
+          </div>
+          <h3>Images</h3>
+          <div className="galleryAll">
+            {
+              imgs.map(
+                img => 
+                <img src={`https://vikashvvn2.000webhostapp.com/portfolio/img/${img}`} alt={`${name} image`} key={img}/>)
+            }
+          </div>
+
         </div>
       );
     }

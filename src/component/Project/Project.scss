@@ -1,0 +1,15 @@
+.gallerySwipe{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  img{
+    max-height: 200px;
+    margin: 10px;
+  }
+}
+
+.galleryAll{
+  img{
+    max-width: 90%;
+  }
+}

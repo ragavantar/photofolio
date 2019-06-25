@@ -21,7 +21,7 @@ function App() {
         <Route path="/photofolio/photography" component = {Photography}/>
         <Route path="/photofolio/Contact" component = {Contact}/>
         <Route path = "/photofolio/Shop" component = {Shop} />
-        <Route path = "/photofolio/Project" component = {Project} />
+        <Route path = "/photofolio/Project/:id" component = {Project} />
       </Switch>
       </div>
     </React.Fragment>
