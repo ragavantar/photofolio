@@ -14,7 +14,7 @@ class Project extends Component {
 
   componentDidMount() {
     const { match: { params } } = this.props;
-    fetch(`https://vikashvvn2.000webhostapp.com/portfolio/api/getProject.php?id=${params.id}`)
+    fetch(`/api/getProject.php?id=${params.id}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -53,7 +53,7 @@ class Project extends Component {
             {
               imgs.map(
                 img => 
-                <img src={`https://vikashvvn2.000webhostapp.com/portfolio/img/thumbs/${img}`} alt={`${name} image`} key={img}/>)
+                <img src={`/img/thumbs/${img}`} alt={`${name} image`} key={img}/>)
             }
           </div>
           <h3>Images</h3>
@@ -61,7 +61,7 @@ class Project extends Component {
             {
               imgs.map(
                 img => 
-                <img src={`https://vikashvvn2.000webhostapp.com/portfolio/img/${img}`} alt={`${name} image`} key={img}/>)
+                <img src={`/img/${img}`} alt={`${name} image`} key={img}/>)
             }
           </div>
 

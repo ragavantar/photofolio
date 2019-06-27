@@ -17,11 +17,17 @@ function App() {
       <Nav />
       <div className="content">
       <Switch>
-        <Route exact path="/photofolio/" component = {About}/>
+        {/* <Route exact path="/photofolio/" component = {About}/>
         <Route path="/photofolio/photography" component = {Photography}/>
         <Route path="/photofolio/Contact" component = {Contact}/>
         <Route path = "/photofolio/Shop" component = {Shop} />
-        <Route path = "/photofolio/Project/:id" component = {Project} />
+        <Route path = "/photofolio/Project/:id" component = {Project} /> */}
+
+        <Route exact path="/" component = {About}/>
+        <Route path="/photography" component = {Photography}/>
+        <Route path="/Contact" component = {Contact}/>
+        <Route path = "/Shop" component = {Shop} />
+        <Route path = "/Project/:id" component = {Project} />
       </Switch>
       </div>
     </React.Fragment>

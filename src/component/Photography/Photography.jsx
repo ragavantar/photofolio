@@ -23,7 +23,7 @@ class Photography extends Component {
 
     cat = encodeURIComponent(cat);
 
-    const url = `https://vikashvvn2.000webhostapp.com/portfolio/api/getImages.php?cat=${cat}`;
+    const url = `/api/getImages.php?cat=${cat}`;
 
     fetch(url)
       .then(res => res.json())
@@ -67,8 +67,9 @@ class Photography extends Component {
         <div className="galleryL">
           {this.state.images.map(proj => (
             <figure>
-              <Link to={`/photofolio/Project/${proj.id}`}>
-              <img src={`https://vikashvvn2.000webhostapp.com/portfolio/img/thumbs/${proj.img}`} alt={proj.name} key={proj.id} />
+              {/* <Link to={`/photofolio/Project/${proj.id}`}> */}
+              <Link to={`/Project/${proj.id}`}>
+              <img src={`/img/thumbs/${proj.img}`} alt={proj.name} key={proj.id} />
               <figcaption>{proj.name} +</figcaption>
               </Link>
             </figure>

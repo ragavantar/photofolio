@@ -6,7 +6,7 @@ const About = () => {
     <article className="about">
       <figure>
         <img
-          src="https://vikashvvn2.000webhostapp.com/portfolio/image/about.jpeg"
+          src="/image/about.jpeg"
           alt="profile"
         />
       </figure>
