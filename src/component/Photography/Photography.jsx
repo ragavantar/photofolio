@@ -4,7 +4,6 @@ import "./Photography.scss";
 import { Link } from "react-router-dom";
 
 
-import Data from "./data.js";
 
 class Photography extends Component {
   state = {};
