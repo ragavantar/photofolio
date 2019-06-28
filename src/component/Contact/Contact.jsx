@@ -35,7 +35,7 @@ class Contact extends Component {
         fetch(url, options)
         .then(res => res.json())
         .then(response => {
-            if(response) alert('success')
+            if(response === 1) alert('success')
             else alert('failed')
         })
         .catch(error => alert('error'));
