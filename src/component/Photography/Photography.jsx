@@ -11,7 +11,7 @@ class Photography extends Component {
     super();
     this.state = {
       images: [],
-      cat: 'Portrait'
+      cat: 'Fashion'
     };
   }
 
@@ -54,8 +54,8 @@ class Photography extends Component {
         <br />
         <br />
         <div className="category">
-          <div onClick={(e)=>this.selectCat(e)}>Portrait</div>
           <div onClick={(e)=>this.selectCat(e)}>Fashion</div>
+          <div onClick={(e)=>this.selectCat(e)}>Portrait</div>
           <div onClick={(e)=>this.selectCat(e)}>Wedding&nbsp;Portfolio</div>
           <div onClick={(e)=>this.selectCat(e)}>Commercial&nbsp;Projects</div>
           <div onClick={(e)=>this.selectCat(e)}>Life&nbsp;Style</div>
