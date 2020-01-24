@@ -50,9 +50,6 @@ class Photography extends Component {
   render() {
     return (
       <React.Fragment>
-        <br />
-        <br />
-        <br />
         <div className="category">
           <div onClick={(e)=>this.selectCat(e)}>Fashion</div>
           <div onClick={(e)=>this.selectCat(e)}>Portrait</div>

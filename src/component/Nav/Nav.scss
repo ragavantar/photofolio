@@ -33,6 +33,10 @@ nav {
   }
 }
 
+.menu {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     position: fixed;
@@ -72,5 +76,18 @@ nav {
     &.open .arrow{
       transform: rotate(-90deg);
     }
+  }
+
+  .menu {
+    display: block;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: grey;
+    border-radius: 20px; 
   }
 }

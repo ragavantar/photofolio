@@ -9,6 +9,25 @@ class Contact extends Component {
         desc: null
      }
 
+     componentDidMount(){
+        const data = { name: 'example' };
+
+        fetch('http://jeevansubramaniphotography.com/api/mail.php', {
+          method: 'POST', // or 'PUT'
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+        
+     }
      handleInputChange(event) {
         const target = event.target;
         const value = target.value;
@@ -31,7 +50,8 @@ class Contact extends Component {
                 'Content-Type': 'application/json'
             }
             };
-
+        
+            console.log(options)
         fetch(url, options)
         .then(res => res.json())
         .then(response => {
@@ -43,6 +63,7 @@ class Contact extends Component {
     }
 
     render() { 
+        console.log(this.state)
         return ( 
             <section className="Contact">
             <form onSubmit={(e)=>this.mail(e)} type="POST">

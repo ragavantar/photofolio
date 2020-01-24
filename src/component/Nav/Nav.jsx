@@ -5,7 +5,8 @@ import "./Nav.scss";
 const Nav = () => {
   const [status, setStatus] = useState('close');
   return (
-    <nav className={status}  onClick={()=> status === 'close'? setStatus('open'): setStatus('close')}>
+    <React.Fragment>
+    <nav className={status} onClick={()=> status === 'close'? setStatus('open'): setStatus('close')}>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54-kZKQw7mZcRpGKi0Mlzo66I8lQWDgPSm0D4BVIEA-X5-rpW" alt="logo" />
       <h1>Jeevan subramani photography</h1>
       <ul>
@@ -18,10 +19,14 @@ const Nav = () => {
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/shop">Shop</Link></li>
       </ul>
-      <div className="arrow">
+      {/* <div className="arrow">
         <img src="arrow.png" alt="arrow" />
-      </div>
+      </div> */}
     </nav>
+    <div className="menu" onClick={()=> status === 'close'? setStatus('open'): setStatus('close')}>
+      Menu
+    </div>
+    </React.Fragment>
   );
 };
 

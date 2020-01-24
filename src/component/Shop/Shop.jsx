@@ -3,9 +3,6 @@ import React from "react";
 const Shop = () => {
     return (
         <section>
-            <br />
-            <br />
-            <br />
             <h1>Services Offered</h1>
             <ul>
                 <li>Fashion</li>
