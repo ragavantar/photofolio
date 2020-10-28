@@ -10,22 +10,22 @@ class Contact extends Component {
      }
 
      componentDidMount(){
-        const data = { name: 'example' };
+        // const data = { name: 'example' };
 
-        fetch('http://jeevansubramaniphotography.com/api/mail.php', {
-          method: 'POST', // or 'PUT'
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log('Success:', data);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
+        // fetch('/api/mail.php', {
+        //   method: 'POST', // or 'PUT'
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //   },
+        //   body: JSON.stringify(data),
+        // })
+        // .then((response) => response.json())
+        // .then((data) => {
+        //   console.log('Success:', data);
+        // })
+        // .catch((error) => {
+        //   console.error('Error:', error);
+        // });
         
      }
      handleInputChange(event) {
@@ -41,7 +41,7 @@ class Contact extends Component {
     mail = (e)=> {
         e.preventDefault();
         
-        const url = 'http://jeevansubramaniphotography.com/api/mail.php';
+        const url = '/api/mail.php';
         const data = this.state;
         const options = {
             method: 'POST', // or 'PUT'
